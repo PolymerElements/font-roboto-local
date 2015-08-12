@@ -1,6 +1,6 @@
 {
   "name": "font-roboto-local",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/PolymerElements/font-roboto-local",
   "authors": [
     "The Polymer Project Authors"
@@ -19,6 +19,7 @@
     "test",
     "tests",
     "update-fonts.sh",
+    "generate-style.js",
     "demo.html"
   ]
 }
