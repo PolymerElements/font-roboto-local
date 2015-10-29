@@ -1,6 +1,11 @@
-# font-roboto-local
 
-A version of [font-roboto](https://github.com/PolymerElements/font-roboto) using
-locally available font files
+<!---
 
-The font files are subject to the Apache License found here: https://github.com/google/fonts/blob/master/apache/roboto/LICENSE.txt
+This README is automatically generated from the comments in these files:
+roboto.html
+
+Edit those files, and our readme bot will duplicate them over here!
+Edit this file, and the bot will squash your changes :)
+
+-->
+
