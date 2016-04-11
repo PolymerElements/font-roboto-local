@@ -13,7 +13,7 @@ function generate(metadata) {
   var family = meta.name;
   var path = family.toLowerCase().replace(' ', '');
   meta.fonts.forEach(function(font) {
-    console.log([
+    Polymer.Base._log([
       '@font-face {',
       'font-family: "' + family + '";',
       'src: url(fonts/' + path + '/' + font.filename + ') format("truetype");',
