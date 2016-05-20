@@ -5,7 +5,7 @@
   "authors": [
     "The Polymer Project Authors"
   ],
-  "description": "An HTML Import for Robot, with local font files",
+  "description": "An HTML Import for Roboto, with local font files",
   "main": "roboto.html",
   "keywords": [
     "font",
@@ -20,6 +20,7 @@
     "tests",
     "update-fonts.sh",
     "generate-style.js",
-    "demo.html"
+    "demo.html",
+    "packages.json"
   ]
 }

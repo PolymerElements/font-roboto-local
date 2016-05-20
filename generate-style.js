@@ -8,8 +8,15 @@
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
 
+var fs = require('fs');
+var protobuf = require('protobufjs');
+var textformat = require('protobuf-textformat');
+var builder = protobuf.loadProtoFile('./.fonts/tools/fonts_public.proto');
+
 function generate(metadata) {
-  var meta = require(metadata);
+  var source = fs.readFileSync(metadata, 'utf-8');
+  var result = textformat.parse(builder, 'google.fonts.FamilyProto', source);
+  var meta = result.message;
   var family = meta.name;
   var path = family.toLowerCase().replace(' ', '');
   meta.fonts.forEach(function(font) {
@@ -24,5 +31,6 @@ function generate(metadata) {
   });
 }
 
-generate('./fonts/roboto/METADATA.json');
-generate('./fonts/robotomono/METADATA.json');
+generate('./fonts/roboto/METADATA.pb');
+generate('./fonts/robotomono/METADATA.pb');
+generate('./fonts/robotocondensed/METADATA.pb');
