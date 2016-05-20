@@ -8,12 +8,16 @@
 # subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 set -x
 
+command -v protoc >/dev/null 2>&1 || { echo >&2 "I require Google Protocol Buffers to be installed. Aborting."; exit 1; }
+
 if [ ! -d .fonts ]; then
   git clone --no-checkout https://github.com/google/fonts.git .fonts
   pushd .fonts
   git config core.sparsecheckout true
   echo "apache/roboto" >> .git/info/sparse-checkout
   echo "apache/robotomono" >> .git/info/sparse-checkout
+  echo "apache/robotocondensed" >> .git/info/sparse-checkout
+  echo "tools/fonts_public.proto" >> .git/info/sparse-checkout
   git checkout
   popd
 else

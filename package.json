@@ -1,0 +1,22 @@
+{
+  "name": "font-roboto-local",
+  "version": "1.0.0",
+  "description": "A version of [font-roboto](https://github.com/PolymerElements/font-roboto) using locally available font files",
+  "main": "generate-style.js",
+  "dependencies": {
+    "protobuf-textformat": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "https://github.com/PolymerElements/font-roboto-local.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PolymerElements/font-roboto-local/issues"
+  },
+  "homepage": "https://github.com/PolymerElements/font-roboto-local"
+}
