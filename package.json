@@ -1,0 +1,6 @@
+{
+  "name": "@polymer/font-roboto-local",
+  "private": true,
+  "description": "An HTML Import for Robot, with local font files",
+  "license": "BSD-3-Clause"
+}
