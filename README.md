@@ -7,13 +7,30 @@ The font files are subject to the Apache License found here: https://github.com/
 
 ## Usage in a Polymer 2.x Application
 
-Add the following line to the end of your `bower.json`
+To add this to your application, run this command from your project root directory:
 
-```json
-"font-roboto": "PolymerElements/font-roboto-local#^1.1.0"
+```sh
+bower install --save 'font-roboto=PolymerElements/font-roboto-local#^1.1.0'
 ```
 
-Remove your `bower_components` directory and run `bower install`.
+This will add and install the dependency to your project. Then, you can import the file and use the font in your page:
+
+```html
+<head>
+  ...
+  <link rel="import" href="roboto.html">
+  <style>
+    .roboto {
+      font-family: Roboto
+    }
+  </style>
+</head>
+<body>
+  ...
+  <div class="roboto">This is using Roboto!</div>
+</body>
+...
+```
 
 If you are using polymer CLI to build your app then add the following to your `polymer.json`'s `extraDependencies` array.
 
