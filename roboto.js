@@ -8,8 +8,9 @@ found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
 part of the polymer project is also subject to an additional IP rights grant
 found at http://polymer.github.io/PATENTS.txt
 */
-const style = document.createElement('style');
+const importUrl = import.meta.url;
 
+const style = document.createElement('style');
 style.textContent = `
   @font-face {
   font-family: "Roboto";
