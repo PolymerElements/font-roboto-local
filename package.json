@@ -7,6 +7,10 @@
   "homepage": "https://github.com/PolymerElements/font-roboto-local",
   "name": "@polymer/font-roboto-local",
   "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PolymerElements/font-roboto-local"
+  },
   "devDependencies": {
     "@webcomponents/webcomponentsjs": "^2.0.3",
     "webmat": "^0.2.2",
